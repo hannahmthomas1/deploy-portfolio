@@ -12,7 +12,7 @@ export const Contact = () => {
         <Row className="align-items-center">
           <Col md={2}></Col>
           <Col md={4}>
-            <img src={contactImg} alt="Contact Us" style={{ width: "70%" }} />
+            <img className="contact-img" src={contactImg} alt="Contact Us" />
           </Col>
           <Col md={4}>
             <h2>Get In Touch</h2>

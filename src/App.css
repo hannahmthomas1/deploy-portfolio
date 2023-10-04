@@ -103,6 +103,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+  overflow: hidden;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -254,6 +255,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.center-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .banner .tagline {
   /* font-weight: 700; */
   letter-spacing: 0.8px;
@@ -262,7 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     90.21deg,
     rgba(170, 54, 124, 0.5) -5.91%,
     rgba(74, 47, 189, 0.5) 111.58%
-  ); */
+    ); */
   /* background: #70a9a1; */
   border-radius: 15px;
   /* border: 1px solid rgba(255, 255, 255, 0.5); */
@@ -285,11 +292,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
+.banner h2 {
+  color: #fffef8;
+  font-family: "Montserrat" !important;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
 .banner img {
   /* animation: updown 3s linear infinite; */
   width: 450px;
   border-radius: 2000px;
-  border: 15px solid #70a9a1;
+  border: 1vw solid #70a9a1;
 }
 
 img.bubble-border {
@@ -313,6 +329,72 @@ img.bubble-border {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+@media screen and (max-width: 990px) {
+  .banner {
+    margin-top: 0;
+    padding: 150px 0 50px 0;
+  }
+  .banner .tagline {
+    letter-spacing: 0.8px;
+    padding: 8px 5px;
+    font-size: 25px;
+    /* margin-bottom: 16px; */
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .banner h1 {
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .banner h2 {
+    font-size: 20px;
+  }
+  .banner p {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 80%;
+  }
+  .banner img {
+    width: 250px;
+  }
+  img.bubble-border {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    margin-top: 0;
+    padding: 150px 0 50px 0;
+  }
+  .banner .tagline {
+    letter-spacing: 0.8px;
+    padding: 8px 5px;
+    font-size: 30px;
+    /* margin-bottom: 16px; */
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .banner h1 {
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .banner p {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 80%;
+  }
+  .banner img {
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 2000px;
+  }
+}
 
 /************ Resume Css ************/
 .skill {
@@ -320,6 +402,9 @@ img.bubble-border {
   position: relative;
   padding-top: 70px;
   background-color: #276174;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .skill-bx {
   background: #70a9a1;
@@ -329,8 +414,10 @@ img.bubble-border {
 }
 .skill h2 {
   margin-top: 10%;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
+  margin-left: 0;
+  margin-right: 0;
 }
 .skill p {
   color: #22404b;
@@ -339,23 +426,6 @@ img.bubble-border {
   line-height: 1.5em;
   margin: 14px 0 75px 0;
 }
-/* .skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-} */
-/* .skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-} */
-
 .button-test {
   border-radius: 30px;
   background-color: #40798c;
@@ -363,6 +433,27 @@ img.bubble-border {
   padding: 15px;
   border: none;
   margin-top: 30px;
+}
+.col-md-5 img {
+  width: 70%;
+}
+@media screen and (max-width: 600px) {
+  .skill-bx {
+    text-align: center;
+    padding: 60px 50px;
+    /* width: 80%; */
+  }
+  .skill h2 {
+    margin-top: 10%;
+    font-size: 40px;
+  }
+  .skill p {
+    font-size: 14px;
+    margin: 14px 0 75px 0;
+  }
+  .col-md-5 img {
+    width: 50%;
+  }
 }
 
 /************ Projects Css ************/
@@ -495,6 +586,30 @@ img.bubble-border {
   right: 0;
   z-index: -4;
 }
+@media screen and (max-width: 990px) {
+  .project {
+    padding: 80px 0;
+    position: relative;
+    background-color: #276174;
+  }
+  .project h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #f6f1d1;
+  }
+  .project p {
+    color: #fffef3;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+}
 
 /************ Contact Css ************/
 .contact {
@@ -502,7 +617,7 @@ img.bubble-border {
   padding: 10px 0 100px 0;
 }
 .contact img {
-  width: 92%;
+  width: 70%;
 }
 .contact h2 {
   font-size: 45px;
@@ -573,6 +688,16 @@ img.bubble-border {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+/* @media screen and (max-width: 990px) {
+  .contact img {
+    width: 60%;
+  }
+} */
+@media screen and (max-width: 760px) {
+  .contact img {
+    width: 50%;
+  }
 }
 
 /************ Footer Css ************/

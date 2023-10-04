@@ -43,7 +43,7 @@ export const Skills = () => {
                 </a>
               </Col>
               <Col md={5}>
-                <img src={resume} alt="" style={{ width: "70%" }} />
+                <img src={resume} alt="" />
               </Col>
             </Row>
           </div>

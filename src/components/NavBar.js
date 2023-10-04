@@ -79,7 +79,7 @@ export const NavBar = () => {
               Connect
             </Nav.Link>
           </Nav>
-          <span className="navbar-text">
+          {/* <span className="navbar-text">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/hannahluebke/">
                 <img src={navIcon1} alt="LinkedIn" />
@@ -91,10 +91,7 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="Instagram" />
               </a>
             </div>
-            {/* <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button> */}
-          </span>
+          </span> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

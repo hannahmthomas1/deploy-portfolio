@@ -52,8 +52,10 @@ export const Banner = () => {
     <section id="home">
       <Container className="banner">
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Hello!</span>
+          <Col xs={12} md={6} xl={7} className="center-items">
+            <span className="tagline">
+              <h2>Hello!</h2>
+            </span>
             <h1>
               {"I'm Hannah Luebke "}
               <span classname="wrap">{text}</span>
