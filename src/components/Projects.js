@@ -51,18 +51,13 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              While studying Information Systems at Brigham Young University, I
-              built a variety of web development projects. I was surprised to
-              find myself dedicating more time to creating a good user
-              experience rather than focusing on the efficiency of the code.
-              This self-discovery led me to the field of UX Design. I have
-              pursued experience by enrolling in online courses and practicing
-              with both professional and personal projects.
-            </p>
-            <p>
-              Below, I have showcased some of the projects where I had the
-              opportunity to apply the design principles and processes I've
-              learned along the way.
+              As I began my Bachelors of Management Information Systems, I found
+              myself prioritizing a good user experience rather than focusing on
+              the efficiency of the code on web development projects. This
+              discovery led me to the field of UX Design. I have pursued
+              experience in the area by enrolling in online courses and
+              practicing with both professional and personal projects. Showcased
+              below are a sample of these projects.
             </p>
             {/* <Tab.Container id="projects-tabs" defaultActiveKey="first"> */}
             {/* <Nav
