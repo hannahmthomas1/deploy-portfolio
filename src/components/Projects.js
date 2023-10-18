@@ -51,13 +51,13 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              During my academic journey studying Information Systems, I built a
-              variety of web development projects. I was surprised to find
-              myself dedicating more time to creating a good user experience
-              rather than focusing on the efficiency of the code. This newfound
-              passion led me to the field of UX Design. I started my journey
-              into the world of UX Design by enrolling in online courses and
-              practicing with personal projects.
+              While studying Information Systems at Brigham Young University, I
+              built a variety of web development projects. I was surprised to
+              find myself dedicating more time to creating a good user
+              experience rather than focusing on the efficiency of the code.
+              This self-discovery led me to the field of UX Design. I have
+              pursued experience by enrolling in online courses and practicing
+              with both professional and personal projects.
             </p>
             <p>
               Below, I have showcased some of the projects where I had the
