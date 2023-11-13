@@ -3,32 +3,39 @@ import projImg1 from "../assets/img/if20-img.jpg";
 import projImg2 from "../assets/img/yarn-img.png";
 import projImg3 from "../assets/img/cc-img.png";
 import projImg4 from "../assets/img/mixlist-img.png";
+import projImg5 from "../assets/img/article.png";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   const projects = [
     {
+      title: "Business Article",
+      description: "Visual Design & Writing",
+      imgUrl: projImg5,
+      URL: "https://www.canva.com/design/DAFySEwG3P4/SgKFzqzxdJ0pf_eisLXD0Q/edit?utm_content=DAFySEwG3P4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    },
+    {
       title: "G20 Interfaith Forum",
-      description: "Design & Development on WordPress",
+      description: "User Research, Visual Design, & Development on WordPress",
       imgUrl: projImg1,
       URL: "https://docs.google.com/presentation/d/1X4z8N12RRMyGHdFBtU0R0JT1XsVmv3NArHvIp-pE9m4/edit#slide=id.p",
     },
     {
       title: "Yarn Community App",
       description:
-        "Design Case Study as part of the Google UX Design Certificate curriculum",
+        "User Research and Visual Design Case Study as part of the Google UX Design Certificate curriculum",
       imgUrl: projImg2,
       URL: "https://docs.google.com/presentation/d/1R_O4dOblKr6SnPbzYmuJwcjdblXLqqrKAxqKLXVT5KM/edit#slide=id.p",
     },
     {
       title: "Christmas Coordinator",
-      description: "Figma Design",
+      description: "Figma Visual Design",
       imgUrl: projImg3,
       URL: "https://www.canva.com/design/DAFvTc6ju5M/P_XLQ2N04WiGxSWOU235lw/view?utm_content=DAFvTc6ju5M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     },
     {
       title: "MixList",
-      description: "Design & Development",
+      description: "Visual Design & Development",
       imgUrl: projImg4,
       URL: "https://www.canva.com/design/DAFvTgXB2yY/9-FgkCzSqOL8Fx-MWxRn2Q/view?utm_content=DAFvTgXB2yY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     },
