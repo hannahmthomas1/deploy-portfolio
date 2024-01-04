@@ -6,40 +6,44 @@ export const About = () => {
     <section className="about">
       <Container id="top">
         <Row className="header-container">
+          <Col xs={12} md={3} xl={3}>
+            <img src={headerImg} alt="header" />
+          </Col>
+          <Col xs={0} md={1} xl={1}></Col>
           <Col xs={12} md={7} xl={7}>
             <h2>About Me</h2>
             <p>
-              As I began my Bachelors of Management Information Systems, I found
-              myself prioritizing a good user experience rather than focusing on
-              the efficiency of the code on web development projects. This
-              discovery led me to the field of UX Design. I have pursued
-              experience in the area by enrolling in online courses and
-              practicing with both professional and personal projects. Showcased
-              below are a sample of these projects.
+              Hi there! I'm Hannah Luebke. I'll be graduating from BYU with a
+              B.S. in Information Systems in April 2024. Currently located in
+              Utah County, Utah and I am passionate about design. Whether it be
+              crafting digital experiences through websites and apps, designing
+              crochet projects, or even adding artistic flair to the tops of my
+              sourdough loaves.
             </p>
-          </Col>
-          <Col xs={0} md={1} xl={1}></Col>
-          <Col xs={12} md={4} xl={3}>
-            <img src={headerImg} alt="header" />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} md={4} xl={4}>
+            <p>
+              My journey into UX design began early in my Information Systems
+              program. While practicing web development, I discovered a strong
+              inclination toward providing a positive user experience. This
+              realization guided me towards UX Design. My pursuit thus far has
+              involved immersive online courses and hands-on professional and
+              personal projects, showcased in my portfolio.
+            </p>
+            <p>
+              Driven by my 'go-getter' spirit, I've earned recognition in
+              previous roles for taking the initiative to not only fulfill tasks
+              but also identify and bridge existing gaps. As a UX designer, I
+              aspire to leverage this skill as well as empathy and intentional
+              design to impact lives. I'm enthusiastic about the opportunitiy UX
+              provides to blend my passion for creativity with the opportunity
+              to create meaningful experiences.
+            </p>
             <h3>Strengths</h3>
             <ul>
-              <li>Empathetic</li>
-              <li>Creative</li>
-              <li>Strategic</li>
-              <li>Experienced with Leadership</li>
-              <li>Determined</li>
-            </ul>
-          </Col>
-          <Col xs={12} md={8} xl={8}>
-            <h3>Skills</h3>
-            <ul>
-              <li>Canva</li>
-              <li>Figma</li>
-              <li>React</li>
+              <li>Empathy</li>
+              <li>Creativity</li>
+              <li>Detail Oriented</li>
+              <li>Leadership</li>
+              <li>Organization</li>
             </ul>
           </Col>
         </Row>
