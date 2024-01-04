@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.54f08d0a.css",
-    "main.js": "/static/js/main.2e4d798a.js",
+    "main.css": "/static/css/main.bf9eeae0.css",
+    "main.js": "/static/js/main.bd4f58ba.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
     "static/media/cc-img.png": "/static/media/cc-img.c6b186963a137876caf7.png",
-    "static/media/article.png": "/static/media/article.00a68105fcf627296f4f.png",
     "static/media/profile-yellow.png": "/static/media/profile-yellow.edcb7ccac2a2633a8a2d.png",
     "static/media/resume-img.png": "/static/media/resume-img.63298f1aa133c8bf6b4b.png",
+    "static/media/servant.png": "/static/media/servant.188874cc72357df23d68.png",
     "static/media/contact-img.png": "/static/media/contact-img.03052dcfe1a8e6d4e5e8.png",
     "static/media/yarn-img.png": "/static/media/yarn-img.ca1f32c64a3bbb7423aa.png",
     "static/media/PoiretOne-Regular.ttf": "/static/media/PoiretOne-Regular.9bf109e97f6294c6fe2b.ttf",
-    "static/media/bubbles.png": "/static/media/bubbles.50989eafbb8198845755.png",
     "static/media/if20-img.jpg": "/static/media/if20-img.f9678adc2152782cacab.jpg",
     "static/media/hannah_logo.png": "/static/media/hannah_logo.4166485d7abea833b978.png",
     "static/media/mixlist-img.png": "/static/media/mixlist-img.8adb5fe3295dfe3598c6.png",
@@ -23,12 +22,12 @@
     "index.html": "/index.html",
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.54f08d0a.css.map": "/static/css/main.54f08d0a.css.map",
-    "main.2e4d798a.js.map": "/static/js/main.2e4d798a.js.map",
+    "main.bf9eeae0.css.map": "/static/css/main.bf9eeae0.css.map",
+    "main.bd4f58ba.js.map": "/static/js/main.bd4f58ba.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54f08d0a.css",
-    "static/js/main.2e4d798a.js"
+    "static/css/main.bf9eeae0.css",
+    "static/js/main.bd4f58ba.js"
   ]
 }
