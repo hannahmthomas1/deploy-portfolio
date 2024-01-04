@@ -6,16 +6,19 @@ export const About = () => {
     <section className="about">
       <Container id="top">
         <Row className="header-container">
-          <Col xs={12} md={3} xl={3}>
-            <img src={headerImg} alt="header" />
+          <Col xs={0} md={0.5} lg={0.5} xl={0.5}>
+            {" "}
           </Col>
-          <Col xs={0} md={1} xl={1}></Col>
-          <Col xs={12} md={7} xl={7}>
+          <Col xs={12} md={12} lg={3} xl={3} className="center-profile">
+            <img src={headerImg} alt="header" className="aboutimg" />
+          </Col>
+          <Col xs={0} md={0.5} lg={1} xl={1}></Col>
+          <Col xs={12} md={12} lg={6} xl={7}>
             <h2>About Me</h2>
             <p>
-              Hi there! I'm Hannah Luebke. I'll be graduating from BYU with a
-              B.S. in Information Systems in April 2024. Currently located in
-              Utah County, Utah and I am passionate about design. Whether it be
+              Hi there! I'm Hannah Luebke. I'll graduate from BYU with a B.S. in
+              Information Systems in April 2024. I am currently located in Utah
+              County, Utah and I am passionate about design. Whether I'm
               crafting digital experiences through websites and apps, designing
               crochet projects, or even adding artistic flair to the tops of my
               sourdough loaves.

@@ -18,9 +18,10 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export const ProjectCard = ({ title, description, imgUrl, URL, tags }) => {
   return (
-    <Container>
+    <Container className="project-box">
       <Row>
-        <Col size={4} sm={4} md={4}>
+        {/* <Col size={1} sm={0} md={0}></Col> */}
+        <Col size={4} sm={12} md={4}>
           <div className="proj-imgbx">
             <a href={URL}>
               <img src={imgUrl} alt="project" />
@@ -31,8 +32,7 @@ export const ProjectCard = ({ title, description, imgUrl, URL, tags }) => {
             </a>
           </div>
         </Col>
-        <Col size={1} sm={1} md={1}></Col>
-        <Col size={6} sm={6} md={6}>
+        <Col size={7} sm={12} md={7}>
           <div className="">
             <a href={URL}>
               <h4>{title}</h4>

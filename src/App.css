@@ -504,10 +504,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 0px 0;
   position: relative;
-  padding-top: 70px;
+  /* padding-top: 20px; */
   background-color: #276174;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .skill-bx {
@@ -542,11 +543,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 60%;
 }
 @media screen and (max-width: 600px) {
-  .skill-bx {
+  div.skill-bx {
     text-align: center;
-    padding: 60px 50px;
-    /* width: 80%; */
+    width: 90%;
   }
+
+  .skill div.align-items-center.row {
+    display: flex;
+    justify-content: center;
+  }
+
   .skill h2 {
     margin-top: 10%;
     font-size: 40px;
@@ -562,7 +568,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding-top: 80px;
   position: relative;
   background-color: #276174;
 }
@@ -583,6 +589,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 
+.project h4 {
+  font-size: 30px;
+}
+
 .project a {
   color: #fffff3;
   font-size: 30px;
@@ -594,41 +604,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .tags {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
   background-color: #70a9a1;
   border-radius: 20%/80%;
-  height: 40px;
-  width: 155px;
+  height: 35px;
+  width: 130px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.tags p {
-  font-size: 14px;
+.project .tags p {
+  font-size: 12px;
   margin-top: 10px;
   width: 100%;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
-span.description {
-  margin-top: 100px;
+.project-box {
+  margin-bottom: 50px;
 }
 
 .proj-imgbx {
   position: relative;
+  height: 300px;
+  width: 100%;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
   color: #f6f1d1;
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   border: #70a9a1 5px solid;
+  margin-bottom: 15px;
 }
 
 .proj-imgbx::before {
@@ -752,7 +768,7 @@ img.transition {
 /************ About Page CSS ************/
 section.about {
   margin-top: 100px;
-  padding: 0 180px 0 180px;
+  /* padding: 0 180px 0 180px; */
   background-color: #276174;
 }
 
@@ -773,4 +789,42 @@ section.about {
   width: 300px;
   border-radius: 2000px;
   border: 5px solid #70a9a1;
+  margin-bottom: 20px;
+}
+
+.center-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Extra Small*/
+@media screen and (max-width: 576px) {
+  .about img {
+    width: 200px;
+  }
+  .center-profile {
+    align-items: center;
+  }
+}
+/* Small*/
+@media screen and (max-width: 768px) {
+  .center-profile {
+    align-items: start;
+  }
+}
+/* Medium */
+@media screen and (max-width: 992px) {
+  .about img {
+    width: 200px;
+  }
+  .center-profile {
+    align-items: center;
+  }
+}
+/* Large */
+@media screen and (max-width: 1200px) {
+  .about img {
+    width: 250px;
+  }
 }
