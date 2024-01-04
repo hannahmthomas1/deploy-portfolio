@@ -4,7 +4,7 @@ import headerImg from "../assets/img/profile-yellow.png";
 export const About = () => {
   return (
     <section className="about">
-      <Container>
+      <Container id="top">
         <Row className="header-container">
           <Col xs={12} md={7} xl={7}>
             <h2>About Me</h2>

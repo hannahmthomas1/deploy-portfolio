@@ -13,7 +13,7 @@ const routes = [
     element: <PageLayout />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "/about", element: <AboutPage /> },
+      { path: "about", element: <AboutPage /> },
     ],
   },
 ];

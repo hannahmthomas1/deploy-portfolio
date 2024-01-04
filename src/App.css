@@ -30,7 +30,7 @@ body {
   overflow-x: hidden;
   position: relative;
   /* background color */
-  background-color: #40798c !important;
+  background-color: #276174 !important;
   /* font color */
   color: #fffef8 !important;
   font-family: "Montserrat" !important;
@@ -112,14 +112,17 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
   width: 9%;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+nav.navbar .navbar-nav .nav-link.navbar-link,
+nav a {
   font-weight: 400;
   color: #fffef8 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  text-decoration: none;
 }
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
@@ -136,14 +139,14 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: rgba(217, 217, 217, 0.1);
+  background: #40798c;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #f6f1d1;
 }
 .social-icon a::before {
   content: "";
@@ -193,7 +196,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #22404b;
 }
 .navbar-text button:hover::before {
   content: "";
@@ -248,6 +251,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+.banner-body {
+  background-color: #40798c;
+}
+
 .banner {
   margin-top: 0;
   padding: 180px 0 100px 0;
@@ -263,17 +270,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .tagline {
-  /* font-weight: 700; */
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  /* background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
-    ); */
-  /* background: #70a9a1; */
   border-radius: 15px;
-  /* border: 1px solid rgba(255, 255, 255, 0.5); */
   font-size: 30px;
   display: inline-block;
 }

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export const Banner = () => {
   return (
-    <section id="home">
+    <section className="banner-body" id="home">
       <Container className="banner">
         <Row className="align-items-left">
           <Col xs={12} md={7} xl={7} className="center-items">
