@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
 import logo from "../assets/img/hannah_logo.png";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -53,7 +53,7 @@ export const NavBar = () => {
             </Nav.Link>
             <HashLink to="/#project">Projects</HashLink>
 
-            <HashLink to="#skills">Resume</HashLink>
+            <HashLink to="/#skills">Resume</HashLink>
 
             <HashLink to="#connect">Connect</HashLink>
             <HashLink to="/about#top" className={"navbar-link"}>

@@ -828,3 +828,132 @@ section.about {
     width: 250px;
   }
 }
+
+/************ Project Page Header CSS ************/
+.project-header {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-text-img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  width: 40%;
+  font-size: 20px;
+}
+
+.project-text-container h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #f6f1d1;
+  margin-bottom: 30px;
+}
+
+.project-header-img {
+  height: 500px;
+  width: 700px;
+  margin-right: 10vw;
+}
+.project-pill-container {
+  max-width: 100vw;
+  padding: 0;
+  height: 40%;
+  margin-top: -70px;
+}
+
+.project-page .project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.project-page h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #f6f1d1;
+  margin-bottom: 30px;
+}
+
+.lighter-box {
+  background-color: #40798c;
+}
+
+/************ Project Page Overview CSS ************/
+.project-overview-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  width: 100%;
+  background-color: #40798c;
+}
+
+.overview-text-box {
+  background-color: #70a9a1;
+  border-radius: 50px;
+  padding: 30px;
+  width: 800px;
+  margin-right: 150px;
+}
+
+img.lightbulb {
+  width: 450px;
+  margin-left: 70px;
+}
+
+/* 
+.project-page h3 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.overview-container {
+  background-color: #70a9a1;
+  border-radius: 50px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.objective-lessons-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.objective-container {
+  background-color: #40798c;
+  border-radius: 50px;
+  padding: 20px;
+  width: 49%;
+}
+
+.lessons-container {
+  background-color: #cfd7c7;
+  border-radius: 50px;
+  padding: 20px;
+  width: 49%;
+  color: #22404b;
+} */
+
+/************ G20/IF20 Project page CSS ************/
+.case-study-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+h3.case-study {
+  margin-bottom: 30px;
+}
