@@ -54,6 +54,14 @@ export const Banner = () => {
         <div class="pill pill5"></div>
         <div class="pill pill6"></div>
         <div class="pill pill7"></div>
+        <div class="pill pill0"></div>
+        <div class="pill pill1"></div>
+        <div class="pill pill2"></div>
+        <div class="pill pill3"></div>
+        <div class="pill pill4"></div>
+        <div class="pill pill5"></div>
+        <div class="pill pill6"></div>
+        <div class="pill pill7"></div>
       </div>
       <div className="darkerbluebox"></div>
       {/* <img className="bubble-border" src={border} alt="border" /> */}

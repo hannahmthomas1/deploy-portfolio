@@ -615,7 +615,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #70a9a1;
   border-radius: 20%/80%;
   height: 35px;
-  width: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* width: 130px; */
   display: flex;
   justify-content: center;
   align-content: center;
@@ -832,51 +834,34 @@ section.about {
 /************ Project Page Header CSS ************/
 .project-header {
   margin-top: 150px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.header-text-img {
-  display: flex;
-  flex-direction: row;
   width: 100%;
 }
 
 .header-text-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10vw;
-  width: 40%;
+  width: 100%;
   font-size: 20px;
+  margin-bottom: 80px;
 }
 
 .project-text-container h2 {
   font-size: 70px;
   font-weight: 700;
   color: #f6f1d1;
-  margin-bottom: 30px;
 }
 
 .project-header-img {
-  height: 500px;
-  width: 700px;
-  margin-right: 10vw;
+  width: 100%;
+  padding: 0;
 }
+
 .project-pill-container {
   max-width: 100vw;
   padding: 0;
-  height: 40%;
-  margin-top: -70px;
+  height: 230px;
+  margin-top: -80px;
 }
 
-.project-page .project-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-}
-
+/* title */
 .project-page h2 {
   font-size: 50px;
   font-weight: 700;
@@ -884,68 +869,127 @@ section.about {
   margin-bottom: 30px;
 }
 
+/* box below floating pills */
 .lighter-box {
   background-color: #40798c;
 }
 
+/* x-Large */
+@media screen and (max-width: 1280px) {
+  .project-header-img {
+    width: 90%;
+  }
+  .header-text-container {
+    margin-bottom: 0px;
+  }
+}
+/* Large */
+@media screen and (max-width: 1200px) {
+  .project-header-img {
+    width: 80%;
+  }
+  .header-text-container {
+    margin-bottom: 0px;
+    width: 40%;
+  }
+}
+/* Medium */
+@media screen and (max-width: 992px) {
+  .project-header-img {
+    width: 100%;
+  }
+  .header-text-container {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+/* Small*/
+@media screen and (max-width: 768px) {
+  .project-header-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+/* Extra Small*/
+@media screen and (max-width: 576px) {
+}
+
 /************ Project Page Overview CSS ************/
 .project-overview-container {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 150px;
+  align-items: center; */
+  padding-top: 100px;
   padding-bottom: 80px;
   width: 100%;
   background-color: #40798c;
 }
 
-.overview-text-box {
+.overview-textbox {
   background-color: #70a9a1;
   border-radius: 50px;
-  padding: 30px;
-  width: 800px;
-  margin-right: 150px;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+.overview-textbox h3 {
+  color: #f6f1d1;
+}
+
+.overview-textbox li {
+  line-height: 20px;
 }
 
 img.lightbulb {
-  width: 450px;
-  margin-left: 70px;
+  width: 100%;
 }
 
-/* 
-.project-page h3 {
-  margin-bottom: 20px;
+.roles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
-.overview-container {
-  background-color: #70a9a1;
-  border-radius: 50px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.objective-lessons-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.objective-container {
+.roles {
+  margin-top: 10px;
+  margin-right: 10px;
   background-color: #40798c;
-  border-radius: 50px;
-  padding: 20px;
-  width: 49%;
+  border-radius: 20%/80%;
+  height: 35px;
+  /* width: 130px; */
+  padding: 10px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.lessons-container {
-  background-color: #cfd7c7;
-  border-radius: 50px;
-  padding: 20px;
-  width: 49%;
-  color: #22404b;
-} */
+/* Extra Small*/
+@media screen and (max-width: 576px) {
+  img.lightbulb {
+    width: 50%;
+  }
+}
+/* Small*/
+@media screen and (max-width: 768px) {
+  img.lightbulb {
+    width: 50%;
+  }
+}
+/* Medium */
+@media screen and (max-width: 992px) {
+  img.lightbulb {
+    width: 50%;
+  }
+}
+/* Large */
+@media screen and (max-width: 1200px) {
+  img.lightbulb {
+    width: 50%;
+  }
+}
 
 /************ G20/IF20 Project page CSS ************/
 .case-study-container {

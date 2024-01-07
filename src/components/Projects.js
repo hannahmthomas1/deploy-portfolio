@@ -21,7 +21,12 @@ export const Projects = () => {
         "The G20 Interfaith Forum is an organization that regularly hosts and participates in events accross the globe. Their site is the information hub for all of these events. At the start of my job with this organization, the site was not mobile friendly and was difficult to navigate. My goal, as the web designer and developer, was to design and develop a site that was simple for users (on mobile and desktop), visually interesting, and maintainable for developers. ",
       imgUrl: projImg1,
       URL: "/g20project#top",
-      tags: ["Visual Design", "User Research", "Navigation", "Development"],
+      tags: [
+        "Visual Design",
+        "User Research",
+        "Navigation Design",
+        "Development",
+      ],
     },
     {
       title: "Crafter's Community App",
@@ -29,7 +34,7 @@ export const Projects = () => {
         "The goal of this case study was to replicate the community feeling of a local yarn shop on a mobile platform so the shop’s activities can be experiences by a larger audience. The local yarn shop is a welcoming community of crafters, but isn’t accessible to a large audience because they don’t have an online presence. The goal of this project is to create a mobile app that can connect crafters in a way that fosters a sense of community.",
       imgUrl: projImg2,
       URL: "/",
-      tags: ["Visual Design", "Research"],
+      tags: ["Visual Design", "User Research"],
     },
     {
       title: "Christmas Coordinator Website",
