@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.6016db9e.css",
-    "main.js": "/static/js/main.7dc0f60f.js",
+    "main.css": "/static/css/main.3e0a5a74.css",
+    "main.js": "/static/js/main.e762ee85.js",
     "static/js/787.86751347.chunk.js": "/static/js/787.86751347.chunk.js",
     "static/media/g20phones.png": "/static/media/g20phones.557e0f3cc7bcdcf0a65e.png",
-    "static/media/if20phone.png": "/static/media/if20phone.f9c58905bd3ec847d9bd.png",
+    "static/media/christmasimg.png": "/static/media/christmasimg.a9c219d3235aa9bf0cd1.png",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/static/media/Montserrat-Italic-VariableFont_wght.ef11b720b9a6cfb9a317.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
     "static/media/cc-img.png": "/static/media/cc-img.c6b186963a137876caf7.png",
     "static/media/profile-yellow.png": "/static/media/profile-yellow.edcb7ccac2a2633a8a2d.png",
+    "static/media/yarnimg.png": "/static/media/yarnimg.bfa3bc33a33286856070.png",
     "static/media/resume-img.png": "/static/media/resume-img.63298f1aa133c8bf6b4b.png",
     "static/media/servant.png": "/static/media/servant.188874cc72357df23d68.png",
     "static/media/contact-img.png": "/static/media/contact-img.03052dcfe1a8e6d4e5e8.png",
     "static/media/yarn-img.png": "/static/media/yarn-img.ca1f32c64a3bbb7423aa.png",
+    "static/media/mixlistimg.png": "/static/media/mixlistimg.7764c4126afec7b00b8a.png",
     "static/media/PoiretOne-Regular.ttf": "/static/media/PoiretOne-Regular.9bf109e97f6294c6fe2b.ttf",
     "static/media/if20-img.jpg": "/static/media/if20-img.f9678adc2152782cacab.jpg",
-    "static/media/hannah_logo.png": "/static/media/hannah_logo.4166485d7abea833b978.png",
     "static/media/mixlist-img.png": "/static/media/mixlist-img.8adb5fe3295dfe3598c6.png",
+    "static/media/logo.png": "/static/media/logo.05d53b69617edf7dd66c.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
@@ -25,12 +27,12 @@
     "index.html": "/index.html",
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.6016db9e.css.map": "/static/css/main.6016db9e.css.map",
-    "main.7dc0f60f.js.map": "/static/js/main.7dc0f60f.js.map",
+    "main.3e0a5a74.css.map": "/static/css/main.3e0a5a74.css.map",
+    "main.e762ee85.js.map": "/static/js/main.e762ee85.js.map",
     "787.86751347.chunk.js.map": "/static/js/787.86751347.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6016db9e.css",
-    "static/js/main.7dc0f60f.js"
+    "static/css/main.3e0a5a74.css",
+    "static/js/main.e762ee85.js"
   ]
 }
