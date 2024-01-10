@@ -1,6 +1,4 @@
-import { Document, Page } from "@react-pdf/renderer";
 import projImg1 from "../assets/img/g20phones.png";
-import preview from "../assets/img/if20phone.png";
 import { ProjectPageHeader } from "./ProjectPageHeader";
 import { ProjectPageOverview } from "./ProjectPageOverview";
 

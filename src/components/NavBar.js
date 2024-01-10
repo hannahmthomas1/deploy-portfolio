@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
-import logo from "../assets/img/hannah_logo.png";
+import logo from "../assets/img/logo.png";
 import { HashLink } from "react-router-hash-link";
 
 import navIcon1 from "../assets/img/nav-icon1.svg";
@@ -37,7 +37,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" width={"180px"} />
+          <img src={logo} alt="Logo" width={"160px"} className="logoimg" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>

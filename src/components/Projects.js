@@ -33,7 +33,7 @@ export const Projects = () => {
       description:
         "The goal of this case study was to replicate the community feeling of a local yarn shop on a mobile platform so the shop’s activities can be experiences by a larger audience. The local yarn shop is a welcoming community of crafters, but isn’t accessible to a large audience because they don’t have an online presence. The goal of this project is to create a mobile app that can connect crafters in a way that fosters a sense of community.",
       imgUrl: projImg2,
-      URL: "/",
+      URL: "/yarn-shop-project#top",
       tags: ["Visual Design", "User Research"],
     },
     {
@@ -41,7 +41,7 @@ export const Projects = () => {
       description:
         "The purpose of this project was to 1) practice using Figma and 2) design a site that would aid in organizing Christmas gift exchanges. I began this project because my family wanted a way to avoid giving duplicate gifts, and as I talked to them, we discovered other useful features. This project includes a UI Library, a custom Logo, and designs for the website on Figma. ",
       imgUrl: projImg3,
-      URL: "/",
+      URL: "/christmas-project#top",
       tags: ["Visual Design"],
     },
     {
@@ -49,7 +49,7 @@ export const Projects = () => {
       description:
         "The purpose of this project was to create a platform where music enthusiasts could craft and share playlists with their friends. In an era where creating playlists has become effortless, I opted for a nostalgic theme to evoke the unique sentiment associated with receiving a mixtape from a friend.",
       imgUrl: projImg4,
-      URL: "/",
+      URL: "/mixlist-project#top",
       tags: ["Visual Design", "Development"],
     },
   ];

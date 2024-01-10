@@ -132,6 +132,12 @@ span.navbar-text {
   display: flex;
   align-items: center;
 }
+
+.logoimg {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
 .social-icon {
   display: inline-block;
   margin-left: 14px;
@@ -1000,4 +1006,11 @@ img.lightbulb {
 
 h3.case-study {
   margin-bottom: 30px;
+}
+
+/************ Crafter's Community Yarn Project page CSS ************/
+
+h3.figma-title {
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
