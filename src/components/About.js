@@ -16,29 +16,11 @@ export const About = () => {
           <Col xs={12} md={12} lg={6} xl={7}>
             <h2>About Me</h2>
             <p>
-              Hi there! I'm Hannah Luebke. I'll graduate from BYU with a B.S. in
-              Information Systems in April 2024. I am currently located in Utah
-              County, Utah and I am passionate about design. Whether I'm
-              crafting digital experiences through websites and apps, designing
-              crochet projects, or even adding artistic flair to the tops of my
-              sourdough loaves.
-            </p>
-            <p>
-              My journey into UX design began early in my Information Systems
-              program. While practicing web development, I discovered a strong
-              inclination toward providing a positive user experience. This
-              realization guided me towards UX Design. My pursuit thus far has
-              involved immersive online courses and hands-on professional and
-              personal projects, showcased in my portfolio.
-            </p>
-            <p>
-              Driven by my 'go-getter' spirit, I've earned recognition in
-              previous roles for taking the initiative to not only fulfill tasks
-              but also identify and bridge existing gaps. As a UX designer, I
-              aspire to leverage this skill as well as empathy and intentional
-              design to impact lives. I'm enthusiastic about the opportunitiy UX
-              provides to blend my passion for creativity with the opportunity
-              to create meaningful experiences.
+            Hi! I'm a UX designer who loves making complex enterprise software feel simple and intuitive. With a background 
+            in Information Systems from BYU's business school, I bridge the gap between technical requirements and user needs. 
+            My journey into UX started with some amazing non-profit projects, and now I get to design data and technology 
+            solutions that improve usability for complex processes. I'm all about turning tricky technical challenges into clear, 
+            efficient experiences.
             </p>
             <h3>Strengths</h3>
             <ul>

@@ -12,8 +12,8 @@ export const Banner = () => {
             </span>
             <h1>I'm Hannah Luebke</h1>
             <p>
-              A UX Designer with a background in Web Development and Business
-              Management.
+              A technical UX Designer with a background in development and business
+              management.
             </p>
             {/* <button onClick={() => console.log("connect")}>
               Let's connect

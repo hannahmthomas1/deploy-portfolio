@@ -12,6 +12,30 @@
   src: url("./assets/font/PoiretOne-Regular.ttf");
   font-weight: 400;
 }
+/* 
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url("./assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url("./assets/font/PlayfairDisplay-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("./assets/font/Quicksand-VariableFont_wght.ttf");
+  font-weight: 400;
+} */
+
+@font-face {
+  font-family: Oswald;
+  src: url("./assets/font/Oswald-VariableFont_wght.ttf");
+  font-weight: 400;
+}
 
 /* Default CSS */
 * {
@@ -42,6 +66,9 @@ h2 {
   padding: 0;
   /* line height */
   line-height: normal;
+  /* font-family: PlayfairDisplay; */
+  /* font-family: Oswald; */
+  /* font-family: Quicksand; */
   font-family: PoiretOne;
   color: #f6f1d1 !important;
 }
@@ -117,7 +144,7 @@ nav a {
   font-weight: 400;
   color: #fffef8 !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 0 20px;
   font-size: 18px;
   opacity: 0.75;
   text-decoration: none;
@@ -131,6 +158,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
   display: flex;
   align-items: center;
+}
+
+.navlogo {
+  opacity: 1;
+  padding: 0;
 }
 
 .logoimg {
@@ -349,7 +381,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-shrink: 0;
   transform: translatey(0px);
   margin: -5px;
-  animation: float 10s ease-in-out infinite;
+  animation: float 7s ease-in-out infinite;
   min-width: 0;
 }
 
