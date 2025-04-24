@@ -1,3 +1,17 @@
+/* Colors */
+:root {
+  --whiter-white: #E8EEEF;
+  --White: #D2DDE0;
+  --Blue1: #195263;
+  --Blue2: #2C6170;
+  --Blue3: #41717E;
+  --Blue4: #5C8590;
+  --Blue5: #8CA9B1;
+  --Blue6: #9DB5BC;
+  --text-primary: #000D11;
+  --text-secondary: #212121;
+}
+
 /* Custom Fonts */
 @font-face {
   font-family: Montserrat;
@@ -56,11 +70,22 @@ body {
   /* background color */
   background-color: #276174 !important;
   /* font color */
-  color: #fffef8 !important;
+  color: var(--text-secondary) !important;
   font-family: "Montserrat" !important;
 }
 
-h1,
+h1 {
+  margin: 0;
+  padding: 0;
+  /* line height */
+  line-height: normal;
+  /* font-family: PlayfairDisplay; */
+  /* font-family: Oswald; */
+  /* font-family: Quicksand; */
+  font-family: PoiretOne;
+  color: var(--text-primary) !important;
+}
+
 h2 {
   margin: 0;
   padding: 0;
@@ -70,7 +95,7 @@ h2 {
   /* font-family: Oswald; */
   /* font-family: Quicksand; */
   font-family: PoiretOne;
-  color: #f6f1d1 !important;
+  color: var(--text-primary) !important;
 }
 
 h3,
@@ -81,6 +106,7 @@ h6 {
   padding: 0;
   /* line height */
   line-height: normal;
+  color: var(--text-primary) !important;
 }
 
 .App {
@@ -106,7 +132,7 @@ h6 {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #fffef8;
+  color: var(--White);
 }
 
 .App-link {
@@ -134,8 +160,11 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #276174;
+  background-color: var(--Blue6);
 }
+
+
+
 nav.navbar a.navbar-brand {
   width: 9%;
 }
@@ -148,6 +177,10 @@ nav a {
   font-size: 18px;
   opacity: 0.75;
   text-decoration: none;
+}
+
+nav.navbar.scrolled a, nav.navbar.scrolled a.nav-link.navbar-link {
+  color: var(--text-primary) !important;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -290,7 +323,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner-body {
-  background-color: #40798c;
+  background-color: #195263;
 }
 
 .banner {
@@ -309,11 +342,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner .tagline {
   letter-spacing: 0.8px;
-  padding: 8px 10px;
+  /* padding: 8px 10px; */
   border-radius: 15px;
   font-size: 30px;
   display: inline-block;
 }
+
+.banner .tagline h2 {
+  color: var(--White) !important;
+}
+
 .banner h1 {
   font-size: 75px;
   font-weight: 600;
@@ -321,18 +359,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   display: block;
   text-align: start;
+  color: var(--whiter-white) !important;
 }
+
 .banner p {
-  color: #fffef8;
   font-size: 22px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
   margin-top: 15px;
   text-align: start;
+  color: var(--White) !important;
 }
 .banner h2 {
-  color: #fffef8;
+  color: var(white);
   font-family: "Montserrat" !important;
   font-weight: 300;
   font-size: 30px;
@@ -366,12 +406,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 30px 0px;
 }
 
+/* The color on the bottom half of the pills animation, now it's white */
 .darkerbluebox {
   z-index: -1;
   margin-top: -100px;
   width: 100%;
   height: 90px;
-  background-color: #276174;
+  background-color: var(--White);
 }
 
 .pill {
@@ -388,14 +429,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .pill0 {
   z-index: 1;
   animation-delay: 0s;
-  background-color: #70a9a1;
+  background-color: #2C6170;
+  width: 100px;
 }
 
 .pill1 {
   height: 125px;
   z-index: 0;
   animation-delay: 2s;
-  background-color: #cfd7c7;
+  background-color: #41717E;
+  width: 85px;
 }
 
 .pill2 {
@@ -403,33 +446,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 175px;
   border-radius: 50%/20%;
   animation-delay: 4s;
-  background-color: #f6f1d1;
+  background-color: #5C8590;
+  width: 75px;
 }
 
 .pill3 {
   z-index: 2;
   animation-delay: 6s;
-  background-color: #fffef3;
+  background-color: #8CA9B1;
+  width: 90px;
 }
 
 .pill4 {
   z-index: 0;
   height: 135px;
   animation-delay: 6s;
-  background-color: #70a9a1;
+  background-color: #9DB5BC;
+  width: 75px;
 }
 
 .pill5 {
   z-index: 2;
   height: 120px;
   animation-delay: 4s;
-  background-color: #f6f1d1;
+  background-color: #8CA9B1;
+  width: 90px;
 }
 
 .pill6 {
   z-index: 1;
   animation-delay: 2s;
-  background-color: #cfd7c7;
+  background-color: #5C8590;
+  width: 85px;
 }
 
 .pill7 {
@@ -437,7 +485,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 175px;
   border-radius: 50%/20%;
   animation-delay: 0s;
-  background-color: #fffef3;
+  background-color: #41717E;
+  width: 80px;
 }
 
 @keyframes updown {
@@ -543,14 +592,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 0px 0;
   position: relative;
   /* padding-top: 20px; */
-  background-color: #276174;
+  background-color: var(--White);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .skill-bx {
-  background: #70a9a1;
+  background: var(--Blue5);
   border-radius: 64px;
   text-align: center;
   padding: 30px 50px;
@@ -571,8 +620,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .button-test {
   border-radius: 30px;
-  background-color: #40798c;
-  color: #fffef8;
+  background-color: var(--Blue1);
+  color: var(--White);
   padding: 15px;
   border: none;
   margin-top: 30px;
@@ -608,7 +657,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding-top: 80px;
   position: relative;
-  background-color: #276174;
+  background-color: var(--White);
 }
 .project h2 {
   font-size: 70px;
@@ -650,7 +699,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
-  background-color: #70a9a1;
+  background-color: var(--Blue2);
   border-radius: 20%/80%;
   height: 35px;
   padding-left: 10px;
@@ -683,13 +732,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  border: #70a9a1 5px solid;
+  border: var(--Blue5) 5px solid;
   margin-bottom: 15px;
 }
 
 .proj-imgbx::before {
   content: "";
-  background: #70a9a1;
+  background: var(--Blue5);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -737,7 +786,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .project {
     padding: 80px 0;
     position: relative;
-    background-color: #276174;
+    background-color: var(--White);
   }
   .project h2 {
     font-size: 40px;
@@ -760,7 +809,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact Css ************/
 .contact {
-  background: #40798c;
+  background: var(--Blue1);
   padding: 0 0 50px 0;
 }
 
@@ -771,9 +820,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: var(--White) !important;
 }
 .contact p {
   margin-bottom: 20px;
+  color: var(--White);
 }
 
 img.transition {
@@ -809,7 +860,7 @@ img.transition {
 section.about {
   margin-top: 100px;
   /* padding: 0 180px 0 180px; */
-  background-color: #276174;
+  background-color: var(--White);
 }
 
 .about .header-container {
@@ -828,7 +879,7 @@ section.about {
   /* animation: updown 3s linear infinite; */
   width: 300px;
   border-radius: 2000px;
-  border: 5px solid #70a9a1;
+  border: 5px solid var(--Blue2);
   margin-bottom: 20px;
 }
 
