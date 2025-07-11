@@ -42,22 +42,25 @@ export const ChristmasProject = () => {
         })}
       </div>
       <div className="case-study-container">
-        <h3 className="figma-title">UI Library & Logo</h3>
-        <iframe
-          width="100%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FePKZbpT6swWOD9ilc0I0Fw%2FChristmas-Coordinator-Library%3Ftype%3Ddesign%26node-id%3D514%253A26%26mode%3Ddesign%26t%3DMrk94fBmGCuz8T3T-1"
-          allowfullscreen
-        ></iframe>
+        <div className="case-studies">
+          <h3 className="figma-title">UI Library & Logo</h3>
+        
+          <iframe
+            width="100%"
+            height="450"
+            src="htStps://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FePKZbpT6swWOD9ilc0I0Fw%2FChristmas-Coordinator-Library%3Ftype%3Ddesign%26node-id%3D514%253A26%26mode%3Ddesign%26t%3DMrk94fBmGCuz8T3T-1"
+            allowfullscreen
+          ></iframe>
 
-        <h3 className="figma-title">Page Designs</h3>
+          <h3 className="figma-title">Page Designs</h3>
 
-        <iframe
-          width="100%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FePKZbpT6swWOD9ilc0I0Fw%2FChristmas-Coordinator-Library%3Ftype%3Ddesign%26node-id%3D519%253A13%26mode%3Ddesign%26t%3DVJGXqmq6aSCnWMH7-1"
-          allowfullscreen
-        ></iframe>
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FePKZbpT6swWOD9ilc0I0Fw%2FChristmas-Coordinator-Library%3Ftype%3Ddesign%26node-id%3D519%253A13%26mode%3Ddesign%26t%3DVJGXqmq6aSCnWMH7-1"
+            allowfullscreen
+          ></iframe>
+          </div>
       </div>
     </section>
   );

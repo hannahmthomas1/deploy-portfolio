@@ -41,22 +41,25 @@ export const MixlistProject = () => {
         })}
       </div>
       <div className="case-study-container">
-        <h3 className="figma-title">Homepage Design</h3>
-        <iframe
-          width="100%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqD1kMw9uqd1BiMNApSkZjR%2FMixtape-Playlist%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DC1eArbEZBxTyIX9x-1"
-          allowfullscreen
-        ></iframe>
+        <div className="case-studies">
+          <h3 className="figma-title">Homepage Design</h3>
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqD1kMw9uqd1BiMNApSkZjR%2FMixtape-Playlist%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DC1eArbEZBxTyIX9x-1"
+            allowfullscreen
+          ></iframe>
 
-        <h3 className="figma-title">Idea Board</h3>
+          <h3 className="figma-title">Idea Board</h3>
 
-        <iframe
-          width="100%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqD1kMw9uqd1BiMNApSkZjR%2FMixtape-Playlist%3Ftype%3Ddesign%26node-id%3D108%253A3%26mode%3Ddesign%26t%3Dg7mRtDND8agg8AOR-1"
-          allowfullscreen
-        ></iframe>
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqD1kMw9uqd1BiMNApSkZjR%2FMixtape-Playlist%3Ftype%3Ddesign%26node-id%3D108%253A3%26mode%3Ddesign%26t%3Dg7mRtDND8agg8AOR-1"
+            allowfullscreen
+          ></iframe>
+        </div>
+        
       </div>
     </section>
   );

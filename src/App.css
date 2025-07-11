@@ -68,10 +68,10 @@ body {
   overflow-x: hidden;
   position: relative;
   /* background color */
-  background-color: #276174 !important;
+  background-color: var(--Blue1) ;
   /* font color */
-  color: var(--text-secondary) !important;
-  font-family: "Montserrat" !important;
+  color: var(--text-secondary);
+  font-family: "Montserrat";
 }
 
 h1 {
@@ -83,7 +83,7 @@ h1 {
   /* font-family: Oswald; */
   /* font-family: Quicksand; */
   font-family: PoiretOne;
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 h2 {
@@ -95,7 +95,7 @@ h2 {
   /* font-family: Oswald; */
   /* font-family: Quicksand; */
   font-family: PoiretOne;
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 h3,
@@ -106,7 +106,7 @@ h6 {
   padding: 0;
   /* line height */
   line-height: normal;
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 .App {
@@ -150,14 +150,17 @@ h6 {
 
 /************ Navbar CSS ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 0px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-  overflow: hidden;
+  overflow: hidden; 
+  background-color: var(--Blue1);
+  
 }
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: var(--Blue6);
@@ -171,7 +174,7 @@ nav.navbar a.navbar-brand {
 nav.navbar .navbar-nav .nav-link.navbar-link,
 nav a {
   font-weight: 400;
-  color: #fffef8 !important;
+  color: var(--whiter-white);
   letter-spacing: 0.8px;
   padding: 0 20px;
   font-size: 18px;
@@ -180,7 +183,7 @@ nav a {
 }
 
 nav.navbar.scrolled a, nav.navbar.scrolled a.nav-link.navbar-link {
-  color: var(--text-primary) !important;
+  color: var(--text-primary) ;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -349,7 +352,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .tagline h2 {
-  color: var(--White) !important;
+  color: var(--White);
 }
 
 .banner h1 {
@@ -359,7 +362,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   display: block;
   text-align: start;
-  color: var(--whiter-white) !important;
+  color: var(--whiter-white);
 }
 
 .banner p {
@@ -369,11 +372,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
   margin-top: 15px;
   text-align: start;
-  color: var(--White) !important;
+  color: var(--White);
 }
 .banner h2 {
   color: var(white);
-  font-family: "Montserrat" !important;
+  font-family: "Montserrat";
   font-weight: 300;
   font-size: 30px;
   letter-spacing: 0.8px;
@@ -663,11 +666,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 70px;
   font-weight: 700;
 
-  color: #f6f1d1;
+  color: var(--text-primary);
   margin-bottom: 55px;
 }
 .project p {
-  color: #fffef3;
+  color: var(--whiter-white);
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -681,7 +684,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project a {
-  color: #fffff3;
+  color: var(--text-secondary);
   font-size: 30px;
   text-decoration: none;
 }
@@ -792,10 +795,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    color: #f6f1d1;
+    color: var(--text-primary);
   }
   .project p {
-    color: #fffef3;
+    color: var(--text-secondary);
     font-size: 14px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -820,7 +823,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--White) !important;
+  color: var(--White);
 }
 .contact p {
   margin-bottom: 20px;
@@ -858,7 +861,7 @@ img.transition {
 
 /************ About Page CSS ************/
 section.about {
-  margin-top: 100px;
+  padding-top: 100px;
   /* padding: 0 180px 0 180px; */
   background-color: var(--White);
 }
@@ -871,7 +874,7 @@ section.about {
 .about h2 {
   font-size: 70px;
   font-weight: 700;
-  color: #f6f1d1;
+  color: var(--text-primary);
   margin-bottom: 30px;
 }
 
@@ -921,9 +924,14 @@ section.about {
 }
 
 /************ Project Page Header CSS ************/
+.project-page {
+  background-color: var(--Blue1);
+}
+
 .project-header {
-  margin-top: 150px;
+  padding-top: 150px;
   width: 100%;
+  
 }
 
 .header-text-container {
@@ -932,10 +940,11 @@ section.about {
   margin-bottom: 80px;
 }
 
-.project-text-container h2 {
+
+.project-text-container p {
   font-size: 70px;
   font-weight: 700;
-  color: #f6f1d1;
+  color: var(--whiter-white);
 }
 
 .project-header-img {
@@ -954,13 +963,17 @@ section.about {
 .project-page h2 {
   font-size: 50px;
   font-weight: 700;
-  color: #f6f1d1;
+  color: var(--whiter-white);
   margin-bottom: 30px;
+}
+
+.project-page .header-text-container p {
+  color: var(--whiter-white);
 }
 
 /* box below floating pills */
 .lighter-box {
-  background-color: #40798c;
+  background-color: var(--Blue6);
 }
 
 /* x-Large */
@@ -1012,18 +1025,22 @@ section.about {
   padding-top: 100px;
   padding-bottom: 80px;
   width: 100%;
-  background-color: #40798c;
+  background-color: var(--Blue6);
 }
 
 .overview-textbox {
-  background-color: #70a9a1;
+  background-color: var(--Blue5);
   border-radius: 50px;
   padding: 30px 40px;
   width: 100%;
 }
 
-.overview-textbox h3 {
-  color: #f6f1d1;
+.overview-textbox p, .overview-textbox h3, .overview-textbox li {
+  color: var(--text-primary);
+}
+
+.overview-textbox p.roles  {
+  color: var(--whiter-white);
 }
 
 .overview-textbox li {
@@ -1044,7 +1061,7 @@ img.lightbulb {
 .roles {
   margin-top: 10px;
   margin-right: 10px;
-  background-color: #40798c;
+  background-color: var(--Blue1);
   border-radius: 20%/80%;
   height: 35px;
   /* width: 130px; */
@@ -1082,9 +1099,14 @@ img.lightbulb {
 
 /************ G20/IF20 Project page CSS ************/
 .case-study-container {
+  width: 100%;
+  padding-top: 80px;
+  background-color: var(--White);
+}
+
+.case-studies {
   width: 60%;
   margin: auto;
-  margin-top: 80px;
 }
 
 h3.case-study {

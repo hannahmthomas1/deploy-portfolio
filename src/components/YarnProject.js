@@ -40,22 +40,24 @@ export const YarnProject = () => {
         })}
       </div>
       <div className="case-study-container">
-        <h3 className="case-study">Case Study</h3>
-        <iframe
-          src="https://drive.google.com/file/d/1QWtOasB3fb-AnB8CBJindzH1-t1RfNKu/preview"
-          width="100%"
-          height="500"
-          loading="eager"
-          title="Yarn Shop Case Study"
-        ></iframe>
-        <h3 className="figma-title">Figma Design</h3>
-        <iframe
-          //   style="border: 1px solid rgba(0, 0, 0, 0.1);"
-          width="100%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnP5AADMdzSrNR9Ubgy3VZk%2FYarn-Shop-Prototype%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DX8Cw6YA5oNtGOjrV-1"
-          allowfullscreen
-        ></iframe>
+        <div className="case-studies">
+          <h3 className="case-study">Case Study</h3>
+          <iframe
+            src="https://drive.google.com/file/d/1QWtOasB3fb-AnB8CBJindzH1-t1RfNKu/preview"
+            width="100%"
+            height="500"
+            loading="eager"
+            title="Yarn Shop Case Study"
+          ></iframe>
+          <h3 className="figma-title">Figma Design</h3>
+          <iframe
+            //   style="border: 1px solid rgba(0, 0, 0, 0.1);"
+            width="100%"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnP5AADMdzSrNR9Ubgy3VZk%2FYarn-Shop-Prototype%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DX8Cw6YA5oNtGOjrV-1"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
   );

@@ -46,14 +46,16 @@ export const G20Project = () => {
         })}
       </div>
       <div className="case-study-container">
-        <h3 className="case-study">Case Study</h3>
-        <iframe
-          src="https://drive.google.com/file/d/1eg4MTuXFcBXd4UeyZ-VA7Pl4ZuiOMKv9/preview?"
-          width="100%"
-          height="500"
-          loading="eager"
-          title="G20 Case Study"
-        ></iframe>
+        <div className="case-studies">
+          <h3 className="case-study">Case Study</h3>
+          <iframe
+            src="https://drive.google.com/file/d/1eg4MTuXFcBXd4UeyZ-VA7Pl4ZuiOMKv9/preview?"
+            width="100%"
+            height="500"
+            loading="eager"
+            title="G20 Case Study"
+          ></iframe>
+        </div>
       </div>
 
       {/* Yarn shop */}
