@@ -1,4 +1,4 @@
-import { ChristmasProject } from "../ChristmasProject.js";
+import { ChristmasProject } from "../project-content/ChristmasProject";
 
 const ChristmasProjectPage = () => {
   return (

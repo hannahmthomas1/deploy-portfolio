@@ -1,4 +1,4 @@
-import { G20Project } from "../G20Project.js";
+import { G20Project } from "../project-content/G20Project";
 
 const G20ProjectPage = () => {
   return (

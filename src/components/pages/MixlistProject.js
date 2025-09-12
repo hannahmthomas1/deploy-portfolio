@@ -1,4 +1,4 @@
-import { MixlistProject } from "../MixlistProject.js";
+import { MixlistProject } from "../project-content/MixlistProject";
 
 const MixlistProjectPage = () => {
   return (

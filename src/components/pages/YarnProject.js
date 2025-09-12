@@ -1,4 +1,4 @@
-import { YarnProject } from "../YarnProject.js";
+import { YarnProject } from "../project-content/YarnProject";
 
 const YarnProjectPage = () => {
   return (

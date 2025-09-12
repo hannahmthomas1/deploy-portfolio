@@ -6,10 +6,6 @@ import YarnProjectPage from "../pages/YarnProject";
 import ChristmasProjectPage from "../pages/ChristmasProject";
 import MixlistProjectPage from "../pages/MixlistProject";
 
-// const routes = [
-//   { path: "/", element: <HomePage /> },
-//   { path: "/about", element: <AboutPage /> },
-// ];
 
 const routes = [
   {

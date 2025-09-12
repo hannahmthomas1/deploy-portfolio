@@ -1,4 +1,4 @@
-import projImg1 from "../assets/img/g20phones.png";
+import projImg1 from "../../assets/img/g20phones.png";
 import { ProjectPageHeader } from "./ProjectPageHeader";
 import { ProjectPageOverview } from "./ProjectPageOverview";
 

@@ -1,4 +1,4 @@
-import projImg1 from "../assets/img/mixlistimg.png";
+import projImg1 from "../../assets/img/mixlistimg.png";
 import { ProjectPageHeader } from "./ProjectPageHeader";
 import { ProjectPageOverview } from "./ProjectPageOverview";
 
