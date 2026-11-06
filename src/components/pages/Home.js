@@ -1,13 +1,13 @@
 import { Banner } from "../Banner";
 import { Projects } from "../Projects";
-import { Skills } from "../Skills";
+import { AboutMe } from "../AboutMe";
 
 const HomePage = () => {
   return (
     <>
       <Banner />
       <Projects />
-      <Skills />
+      <AboutMe />
     </>
   );
 };

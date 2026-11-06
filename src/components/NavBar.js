@@ -47,10 +47,8 @@ export const NavBar = () => {
             </Nav.Link>
             <HashLink to="/#project">Projects</HashLink>
 
-            <HashLink to="/#skills">Resume</HashLink>
-
-            <HashLink to="#connect">Connect</HashLink>
-            <HashLink to="/about#top" className={"navbar-link"}>
+            {/* <HashLink to="#connect">Connect</HashLink> */}
+            <HashLink to="/#about" className={"navbar-link"}>
               About
             </HashLink>
           </Nav>

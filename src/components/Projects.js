@@ -1,10 +1,11 @@
-import { Container, Row, Col } from "react-bootstrap";
 import projImg1 from "../assets/img/if20-img.jpg";
 import projImg2 from "../assets/img/yarn-img.png";
 import projImg3 from "../assets/img/cc-img.png";
 import projImg4 from "../assets/img/mixlist-img.png";
 import projImg5 from "../assets/img/servant.png";
+import cloudImg from "../assets/img/cloud-management/final-management-page.webp";
 import { ProjectCard } from "./ProjectCard";
+import "./Home.css";
 
 export const Projects = () => {
   const projects = [
@@ -15,6 +16,14 @@ export const Projects = () => {
     //   URL: "https://www.canva.com/design/DAF2yYb7j2E/63b9OMPicXEUKk9Q0mmyMQ/view?utm_content=DAF2yYb7j2E&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     //   tags: ["Visual Design", "Writing"],
     // },
+    {
+      title: "Cloud Warehouse Configuration at Domo",
+      description:
+        "Admins with huge Snowflake and Databricks warehouses could connect only 50 tables at a time, and connecting more meant clicking back through the whole setup wizard. As the sole product designer, I separated the setup flow from a new management page, removing the 50-table cap. In the year after launch, users per account grew about 54%.",
+      imgUrl: cloudImg,
+      URL: "/cloud-management#top",
+      tags: ["User Flows", "Information Architecture", "Engineering Partnership"],
+    },
     {
       title: "G20 Interfaith Forum Website",
       description:
@@ -55,21 +64,15 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="project">
-      <Container>
-        <Row>
-          {/* <Col size={1} sm={0} md={1}></Col> */}
-          <Col>
-            <h2>Projects</h2>
-          </Col>
-        </Row>
-        <Row>
-          {projects.map((project, index) => {
-            return <ProjectCard key={index} {...project} />;
-          })}
-        </Row>
-      </Container>
-      {/* <img className="background-image-right" src={colorSharp2}></img> */}
+    <section className="home-work" id="project">
+      <div className="home-wrap">
+        <h2>Selected Work</h2>
+        <div className="work-grid">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

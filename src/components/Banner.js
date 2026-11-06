@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { FloatingPills } from "./FloatingPills";
 // import different header image
 
 export const Banner = () => {
@@ -21,48 +22,7 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
-      <div class="pill-container">
-        <div class="pill pill0"></div>
-        <div class="pill pill1"></div>
-        <div class="pill pill2"></div>
-        <div class="pill pill3"></div>
-        <div class="pill pill4"></div>
-        <div class="pill pill5"></div>
-        <div class="pill pill6"></div>
-        <div class="pill pill7"></div>
-        <div class="pill pill0"></div>
-        <div class="pill pill1"></div>
-        <div class="pill pill2"></div>
-        <div class="pill pill3"></div>
-        <div class="pill pill4"></div>
-        <div class="pill pill5"></div>
-        <div class="pill pill6"></div>
-        <div class="pill pill7"></div>
-        <div class="pill pill0"></div>
-        <div class="pill pill1"></div>
-        <div class="pill pill2"></div>
-        <div class="pill pill3"></div>
-        <div class="pill pill4"></div>
-        <div class="pill pill5"></div>
-        <div class="pill pill6"></div>
-        <div class="pill pill7"></div>
-        <div class="pill pill0"></div>
-        <div class="pill pill1"></div>
-        <div class="pill pill2"></div>
-        <div class="pill pill3"></div>
-        <div class="pill pill4"></div>
-        <div class="pill pill5"></div>
-        <div class="pill pill6"></div>
-        <div class="pill pill7"></div>
-        <div class="pill pill0"></div>
-        <div class="pill pill1"></div>
-        <div class="pill pill2"></div>
-        <div class="pill pill3"></div>
-        <div class="pill pill4"></div>
-        <div class="pill pill5"></div>
-        <div class="pill pill6"></div>
-        <div class="pill pill7"></div>
-      </div>
+      <FloatingPills />
       <div className="darkerbluebox"></div>
       {/* <img className="bubble-border" src={border} alt="border" /> */}
     </section>

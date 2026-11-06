@@ -811,33 +811,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Contact Css ************/
+/* Footer content styles live in Home.css (.connect-*) */
 .contact {
   background: var(--Blue1);
-  padding: 0 0 50px 0;
 }
 
-.contact img {
+svg.transition {
+  display: block;
   width: 100%;
-}
-.contact h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: var(--White);
-}
-.contact p {
-  margin-bottom: 20px;
-  color: var(--White);
-}
-
-img.transition {
-  width: 100%;
-}
-
-@media screen and (max-width: 760px) {
-  .contact img {
-    width: 50%;
-  }
+  height: auto;
+  /* overlap the footer by 1px so no hairline shows at the seam */
+  margin-bottom: -1px;
+  position: relative;
 }
 
 /************ Footer Css ************/

@@ -5,6 +5,7 @@ import G20ProjectPage from "../pages/G20Project";
 import YarnProjectPage from "../pages/YarnProject";
 import ChristmasProjectPage from "../pages/ChristmasProject";
 import MixlistProjectPage from "../pages/MixlistProject";
+import CloudManagementPage from "../pages/CloudManagement";
 
 
 const routes = [
@@ -18,6 +19,7 @@ const routes = [
       { path: "yarn-shop-project", element: <YarnProjectPage /> },
       { path: "christmas-project", element: <ChristmasProjectPage /> },
       { path: "mixlist-project", element: <MixlistProjectPage /> },
+      { path: "cloud-management", element: <CloudManagementPage /> },
     ],
   },
 ];
