@@ -39,21 +39,22 @@ export const AboutMe = () => {
         <div className="about-main">
           <h2>About Me</h2>
           <div className="about-card">
-            <p>
-              I'm a technical UX designer with a foundation 
-              in coding and Information Systems. This helps me both 
-              collaborate with engineering teams and create solutions with 
-              empathy for users across all technical skill levels.
-            </p>
+            
             <p>
               I'm passionate about making advanced technology feel approachable.
               I truly enjoy taking intricate processes and transforming them into 
               clear, accessible experiences. 
             </p>
             <p>
-              My journey spans from work with non-profits building information 
-              centers and data management platforms to designing enterprise 
-              software at Domo, where I design workflows for more technical users.
+              My work spans a broad range of user needs, from improving access to information for 
+              older adults and low-tech audiences in the nonprofit sector to designing complex 
+              enterprise tools for technical users.
+            </p>
+            <p>
+              My educational background 
+              in development and information systems helps me
+              collaborate with engineering teams and create solutions for users with varying 
+              levels of technical expertise.
             </p>
           </div>
           <div className="strengths">

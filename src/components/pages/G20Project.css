@@ -1,0 +1,688 @@
+/* G20 Interfaith Forum case study — styles scoped to .g20-page */
+/* Inter and Poiret One are loaded from Google Fonts in public/index.html */
+
+.g20-page {
+  --g20-bg: #e8eeef;
+  --g20-ink: #000d11;
+  --g20-blue1: #195263;
+  --g20-blue2: #2c6170;
+  --g20-blue3: #41717e;
+  --g20-blue4: #5c8590;
+  --g20-blue5: #8ca9b1;
+  --g20-blue6: #9db5bc;
+  --g20-light: #d2dde0;
+  --g20-cream: #f6f1d1;
+  --g20-line: #c9d6d9;
+  --g20-serif: "Poiret One", PoiretOne, Georgia, serif;
+
+  background: var(--g20-bg);
+  color: var(--g20-ink);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+/* The design uses the browser-default box model (App.css sets border-box on
+   everything). Crop windows and spotlight outlines are measured against it,
+   so restore it here; elements that need border-box set it below. */
+.g20-page,
+.g20-page * {
+  box-sizing: content-box;
+}
+
+/* Undo global heading / paragraph / list styles from App.css + Bootstrap */
+.g20-page h1,
+.g20-page h2,
+.g20-page h3,
+.g20-page p,
+.g20-page figure,
+.g20-page blockquote,
+.g20-page dl,
+.g20-page dd,
+.g20-page ul {
+  margin: 0;
+  color: inherit;
+}
+.g20-page h1,
+.g20-page h2,
+.g20-page h3 {
+  font-family: inherit;
+}
+.g20-page a {
+  color: var(--g20-blue1);
+}
+.g20-page a:hover {
+  color: var(--g20-blue2);
+}
+
+.g20-dark {
+  background: var(--g20-blue1);
+  color: var(--g20-bg);
+}
+.g20-mid {
+  background: var(--g20-light);
+}
+
+/* Layout */
+.g20-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: clamp(20px, 5vw, 64px);
+  padding-right: clamp(20px, 5vw, 64px);
+  box-sizing: border-box;
+}
+.g20-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.g20-stack.g24 {
+  gap: 24px;
+}
+.g20-pad {
+  padding-top: clamp(72px, 9vw, 128px);
+  padding-bottom: clamp(72px, 9vw, 128px);
+}
+.g20-pad-lg {
+  padding-top: clamp(80px, 10vw, 144px);
+  padding-bottom: clamp(80px, 10vw, 144px);
+}
+.g20-mt {
+  margin-top: clamp(40px, 5vw, 64px);
+}
+.g20-mt-lg {
+  margin-top: clamp(48px, 6vw, 80px);
+}
+.g20-mt-xl {
+  margin-top: clamp(56px, 7vw, 96px);
+}
+.mw-720 { max-width: 720px; }
+.mw-780 { max-width: 780px; }
+.mw-900 { max-width: 900px; }
+.mw-960 { max-width: 960px; }
+
+.g20-split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.45fr);
+  gap: clamp(32px, 5vw, 80px);
+  align-items: center;
+}
+.g20-split.rev {
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.85fr);
+}
+.g20-split.end {
+  align-items: end;
+}
+.g20-split > * {
+  min-width: 0;
+}
+.g20-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 40px);
+}
+.g20-grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 48px);
+}
+.g20-grid2 > *,
+.g20-grid3 > * {
+  min-width: 0;
+}
+
+/* Type */
+.g20-page .g20-serif {
+  font-family: var(--g20-serif);
+  font-weight: 400;
+}
+.g20-h2 {
+  font-size: clamp(30px, 3.4vw, 46px);
+  line-height: 1.14;
+  text-wrap: balance;
+}
+.g20-page .g20-h3 {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: clamp(21px, 1.9vw, 27px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.g20-lede {
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.g20-body {
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.g20-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--g20-blue3);
+}
+.g20-dark .g20-eyebrow,
+.g20-eyebrow.g20-on-dark {
+  color: var(--g20-blue6);
+}
+.g20-dark .g20-body {
+  color: var(--g20-light);
+}
+.g20-page .g20-cap {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--g20-blue3);
+  margin: 12px 2px 0;
+}
+.g20-dark .g20-cap {
+  color: var(--g20-blue6);
+}
+
+/* Screenshots, crops and spotlights */
+.g20-shot {
+  position: relative;
+  border: 2px solid var(--g20-blue4);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+}
+.g20-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.g20-crop img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+}
+.g20-hl {
+  position: absolute;
+  border: 3px solid var(--g20-blue1);
+  border-radius: 10px;
+  box-shadow: 0 0 0 6px #ffffff, 0 0 0 4000px rgba(0, 13, 17, 0.38);
+  pointer-events: none;
+}
+
+/* Tags */
+.g20-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.g20-tag {
+  display: inline-flex;
+  align-items: center;
+  background: #b3cdd1;
+  color: #1a2b30;
+  border: 2px solid var(--g20-blue5);
+  border-radius: 10px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.g20-tag.g20-tag-sm {
+  flex: none;
+  border-radius: 8px;
+  padding: 3px 9px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* ============ HERO ============ */
+/* Sizing and placement match the Cloud Management case study hero. */
+.g20-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--g20-blue1);
+  color: var(--g20-bg);
+  padding-top: 110px; /* clears the fixed site navbar */
+}
+.g20-hero-body {
+  position: relative;
+  z-index: 3;
+  padding-top: clamp(56px, 8vw, 120px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(40px, 4vw, 64px);
+  align-items: center;
+}
+.g20-hero-text {
+  flex: 1 1 380px;
+  min-width: 0;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: clamp(40px, 10vw, 150px);
+}
+.g20-hero-title {
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.1;
+  color: var(--g20-bg);
+  text-wrap: balance;
+}
+.g20-hero .g20-lede {
+  color: var(--g20-bg);
+}
+
+.g20-laptop {
+  flex: 2 1 520px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3%;
+  box-sizing: border-box; /* same box model as the Cloud Management laptop */
+}
+/* On wide screens, lift the laptop above the text's vertical center */
+@media (min-width: 901px) {
+  .g20-laptop {
+    align-self: flex-start;
+    margin-top: clamp(-90px, -5vw, -40px);
+  }
+}
+.g20-laptop-screen {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0b1a1f;
+  border: 2px solid #3a4a50;
+  border-radius: 18px 18px 6px 6px;
+  padding: clamp(16px, 1.8vw, 24px) clamp(10px, 1.2vw, 16px)
+    clamp(12px, 1.4vw, 18px);
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0, 13, 17, 0.35);
+}
+.g20-laptop-cam {
+  position: absolute;
+  top: clamp(6px, 0.7vw, 9px);
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-left: -3.5px;
+  border-radius: 50%;
+  background: #2c3a40;
+}
+.g20-laptop-display {
+  aspect-ratio: 1200 / 856;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f4f7f7;
+}
+.g20-laptop-display img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.g20-laptop-base {
+  width: 116%;
+  height: clamp(12px, 1.3vw, 18px);
+  background: linear-gradient(#e3e9eb, #a9bbc0);
+  border-radius: 2px 2px 16px 16px;
+  position: relative;
+  box-shadow: 0 14px 24px rgba(0, 13, 17, 0.3);
+}
+.g20-laptop-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 16%;
+  height: 45%;
+  margin-left: -8%;
+  background: #b9c8cc;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Floating pills (shared FloatingPills component; .pill styles in App.css).
+   Sits above the hero so the pills float in front of the laptop. The top half
+   is transparent so the hero and laptop show through; the bottom half is the
+   light page "floor". */
+.g20-pills-hero {
+  position: relative;
+  z-index: 4;
+  margin-top: -110px;
+  background: linear-gradient(transparent 0 52%, var(--g20-bg) 52%);
+}
+.g20-page .g20-pills-hero,
+.g20-page .g20-pills-hero * {
+  box-sizing: border-box; /* App.css pill sizes assume border-box */
+}
+.g20-pills-hero .pill-container {
+  margin-top: 0;
+}
+.g20-pills-floor {
+  background-color: var(--g20-bg);
+}
+
+/* ============ AT A GLANCE ============ */
+.g20-glance {
+  padding-top: clamp(56px, 7vw, 96px);
+  padding-bottom: clamp(64px, 8vw, 112px);
+}
+.g20-glance-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: flex-start;
+}
+.g20-glance-main {
+  flex: 1.2 1 420px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.g20-page .g20-facts {
+  margin: 8px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(24px, 4vw, 56px);
+  row-gap: 0;
+  max-width: 620px;
+  border-bottom: 1px solid var(--g20-blue6);
+}
+.g20-facts > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 0 22px;
+  border-top: 1px solid var(--g20-blue6);
+}
+.g20-facts dd {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.g20-agenda {
+  flex: 1 1 360px;
+  min-width: 0;
+  background: #f7fafa;
+  border: 1px solid var(--g20-line);
+  border-radius: 22px;
+  padding: clamp(22px, 2.6vw, 32px);
+  box-sizing: border-box;
+  box-shadow: 0 18px 40px rgba(0, 13, 17, 0.06);
+}
+.g20-agenda-label {
+  display: block;
+  margin-bottom: 10px;
+}
+.g20-agenda-list {
+  display: flex;
+  flex-direction: column;
+}
+.g20-page .g20-agenda-link {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 4px;
+  border-top: 1px solid var(--g20-line);
+  text-decoration: none;
+  color: var(--g20-ink);
+  transition: background 0.15s ease, padding 0.15s ease;
+  border-radius: 10px;
+  /* undo the site-wide "nav a" menu styles from App.css */
+  font-size: inherit;
+  letter-spacing: normal;
+  opacity: 1;
+}
+.g20-page .g20-agenda-link:first-child {
+  border-top: none;
+}
+.g20-page .g20-agenda-link:hover {
+  background: var(--g20-bg);
+  padding-left: 14px;
+  padding-right: 14px;
+  color: var(--g20-ink);
+}
+.g20-agenda-link:hover .g20-agenda-arrow {
+  transform: translateX(4px);
+  color: var(--g20-blue1);
+}
+.g20-agenda-num {
+  font-size: 30px;
+  line-height: 1;
+  color: var(--g20-blue1);
+}
+.g20-agenda-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.g20-agenda-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.g20-agenda-teaser {
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--g20-blue3);
+}
+.g20-agenda-arrow {
+  font-size: 20px;
+  color: var(--g20-blue4);
+  transition: transform 0.15s ease;
+}
+
+/* ============ 02 APPROACH: checklist cards ============ */
+/* subgrid keeps the two cards aligned row by row */
+.g20-checkgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto auto auto auto;
+  column-gap: clamp(20px, 3vw, 40px);
+}
+.g20-checkcard {
+  display: grid;
+  grid-row: span 5;
+  grid-template-rows: subgrid;
+  background: #ffffff;
+  border: 1px solid var(--g20-line);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(0, 13, 17, 0.08);
+  padding: clamp(22px, 2.6vw, 32px) clamp(22px, 2.6vw, 32px)
+    clamp(10px, 1.4vw, 16px);
+}
+.g20-checkcard .g20-eyebrow {
+  margin-bottom: 10px;
+}
+.g20-page .g20-ctitle {
+  margin: 0 0 10px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.g20-clist {
+  display: contents;
+  list-style: none;
+}
+.g20-crow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px 0;
+  border-top: 1px solid #e1e8ea;
+  font-size: 17px;
+  line-height: 1.45;
+}
+.g20-crow > span:last-child {
+  flex: 1;
+}
+.g20-crow:not(.off) {
+  justify-content: flex-start;
+}
+.g20-dim {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  opacity: 0.4;
+}
+.g20-crow .g20-dim + .g20-tag {
+  flex: none;
+}
+.g20-cbox {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 2px solid var(--g20-blue5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.g20-cbox.on {
+  background: var(--g20-blue1);
+  border-color: var(--g20-blue1);
+}
+
+/* ============ 03 DESIGN: feature grid ============ */
+.g20-feature-num {
+  font-size: 40px;
+  line-height: 1;
+  color: var(--g20-blue1);
+}
+.g20-feature-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--g20-ink);
+}
+
+/* ============ 04 OUTCOME ============ */
+.g20-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--g20-blue4);
+  padding-top: 28px;
+}
+.g20-stat-num {
+  font-size: clamp(80px, 11vw, 152px);
+  line-height: 1;
+  color: var(--g20-cream);
+  white-space: nowrap;
+}
+.g20-stat-label {
+  font-size: 20px;
+}
+.g20-page .g20-quote {
+  padding-left: clamp(20px, 3vw, 36px);
+  border-left: 3px solid var(--g20-cream);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 900px;
+}
+.g20-quote blockquote {
+  font-size: clamp(28px, 3.4vw, 44px);
+  line-height: 1.25;
+  color: var(--g20-cream);
+  text-wrap: pretty;
+}
+.g20-quote figcaption {
+  font-size: 16px;
+  color: var(--g20-light);
+}
+.g20-page .g20-footnote {
+  margin: clamp(40px, 5vw, 64px) 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--g20-blue6);
+  max-width: 720px;
+}
+
+/* Phone frames */
+.g20-phones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 4vw, 64px);
+}
+.g20-page .g20-phones figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.g20-phones figcaption {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--g20-blue1);
+}
+.g20-phone {
+  width: 100%;
+  max-width: 280px;
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 40px;
+  background: var(--g20-blue2);
+  border: 2px solid var(--g20-blue3);
+  box-shadow: 0 24px 50px rgba(0, 13, 17, 0.18);
+}
+.g20-phone-screen {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #ffffff;
+}
+.g20-phone-screen img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+/* ============ 05 REFLECTION ============ */
+.g20-lesson {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-top: 1px solid var(--g20-blue6);
+  padding-top: 28px;
+}
+.g20-lesson-num {
+  font-size: 44px;
+  line-height: 1;
+  color: var(--g20-blue1);
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 900px) {
+  .g20-split,
+  .g20-split.rev,
+  .g20-grid2,
+  .g20-grid3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .g20-split.rev > .g20-first-on-mobile {
+    order: -1;
+  }
+  .g20-checkgrid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+  }
+  .g20-checkcard + .g20-checkcard {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .g20-phones {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -17,22 +17,22 @@ export const Projects = () => {
     //   tags: ["Visual Design", "Writing"],
     // },
     {
-      title: "Cloud Warehouse Configuration at Domo",
+      title: "The 50-table limit wasn’t the problem",
       description:
-        "Admins with huge Snowflake and Databricks warehouses could connect only 50 tables at a time, and connecting more meant clicking back through the whole setup wizard. As the sole product designer, I separated the setup flow from a new management page, removing the 50-table cap. In the year after launch, users per account grew about 54%.",
+        "Rethinking cloud warehouse configuration for Domo’s data platform. As the sole product designer, I separated the setup flow from a new management page, removing unnecessary limitations. In the year after launch, users per account grew about 54%.",
       imgUrl: cloudImg,
       URL: "/cloud-management#top",
       tags: ["User Flows", "Information Architecture", "Engineering Partnership"],
     },
     {
-      title: "G20 Interfaith Forum Website",
+      title: "A website that keeps itself current",
       description:
-        "The G20 Interfaith Forum is an organization that regularly hosts and participates in events accross the globe. Their site is the information hub for all of these events. At the start of my job with this organization, the site was not mobile friendly and was difficult to navigate. My goal, as the web designer and developer, was to design and develop a site that was simple for users (on mobile and desktop), visually interesting, and maintainable for developers. ",
+        "I redesigned a sprawling WordPress site so it could keep itself current, work on phones and outlast me.",
       imgUrl: projImg1,
       URL: "/g20project#top",
       tags: [
         "Visual Design",
-        "User Research",
+        // "User Research",
         "Navigation Design",
         "Development",
       ],
@@ -53,14 +53,14 @@ export const Projects = () => {
       URL: "/christmas-project#top",
       tags: ["Visual Design"],
     },
-    {
-      title: "MixList Website",
-      description:
-        "The purpose of this project was to create a platform where music enthusiasts could craft and share playlists with their friends. In an era where creating playlists has become effortless, I opted for a nostalgic theme to evoke the unique sentiment associated with receiving a mixtape from a friend.",
-      imgUrl: projImg4,
-      URL: "/mixlist-project#top",
-      tags: ["Visual Design", "Development"],
-    },
+    // {
+    //   title: "MixList Website",
+    //   description:
+    //     "The purpose of this project was to create a platform where music enthusiasts could craft and share playlists with their friends. In an era where creating playlists has become effortless, I opted for a nostalgic theme to evoke the unique sentiment associated with receiving a mixtape from a friend.",
+    //   imgUrl: projImg4,
+    //   URL: "/mixlist-project#top",
+    //   tags: ["Visual Design", "Development"],
+    // },
   ];
 
   return (

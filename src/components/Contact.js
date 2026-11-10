@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import "./Home.css";
 
 // Pages whose last section uses the lighter About Me background
-const LIGHT_END_PAGES = ["/", "/cloud-management"];
+const LIGHT_END_PAGES = ["/"];
 
 const iconProps = {
   width: 20,

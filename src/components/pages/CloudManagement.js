@@ -53,6 +53,22 @@ const Shot = ({ src, alt, highlight, crop, className = "", style, children }) =>
   </div>
 );
 
+// "In this case study" chapters: [section id, title, teaser]
+const agenda = [
+  ["problem", "The problem", "Only 50 tables at a time"],
+  ["approach", "The approach", "Splitting setup from management"],
+  ["design", "The design", "A management page built for warehouses"],
+  ["outcome", "Outcome", "+54% users per account"],
+  ["reflection", "Reflection", "Questioning the problem first"],
+];
+
+// The site uses a hash router, so in-page "#id" links would change the route.
+// Scroll to the section instead (smoothly, offset by html scroll-padding-top).
+const scrollToSection = (e, id) => {
+  e.preventDefault();
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
+
 const CloudManagementPage = () => {
   return (
     <div className="cs-page" id="top">
@@ -115,6 +131,31 @@ const CloudManagementPage = () => {
               ))}
             </dl>
           </div>
+
+          <nav aria-label="In this case study" className="cs-agenda">
+            <span className="cs-eyebrow cs-agenda-label">In this case study</span>
+            <div className="cs-agenda-list">
+              {agenda.map(([id, title, teaser], i) => (
+                <a
+                  key={id}
+                  className="cs-agenda-link"
+                  href={`#${id}`}
+                  onClick={(e) => scrollToSection(e, id)}
+                >
+                  <span className="cs-serif cs-agenda-num">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="cs-agenda-text">
+                    <span className="cs-agenda-title">{title}</span>
+                    <span className="cs-agenda-teaser">{teaser}</span>
+                  </span>
+                  <span className="cs-agenda-arrow" aria-hidden="true">
+                    →
+                  </span>
+                </a>
+              ))}
+            </div>
+          </nav>
         </div>
       </section>
 

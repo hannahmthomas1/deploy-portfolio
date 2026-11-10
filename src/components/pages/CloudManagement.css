@@ -406,6 +406,80 @@
   min-width: 0;
   max-width: 820px;
 }
+/* "In this case study" card */
+.cs-agenda {
+  flex: 1 1 360px;
+  min-width: 0;
+  background: #f7fafa;
+  border: 1px solid #c9d6d9;
+  border-radius: 22px;
+  padding: clamp(22px, 2.6vw, 32px);
+  box-sizing: border-box;
+  box-shadow: 0 18px 40px rgba(0, 13, 17, 0.06);
+}
+.cs-agenda-label {
+  display: block;
+  margin-bottom: 10px;
+}
+.cs-agenda-list {
+  display: flex;
+  flex-direction: column;
+}
+.cs-page .cs-agenda-link {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 4px;
+  border-top: 1px solid #c9d6d9;
+  text-decoration: none;
+  color: #000d11;
+  transition: background 0.15s ease, padding 0.15s ease;
+  border-radius: 10px;
+  /* undo the site-wide "nav a" menu styles from App.css */
+  font-size: inherit;
+  font-weight: 400;
+  letter-spacing: normal;
+  opacity: 1;
+}
+.cs-page .cs-agenda-link:first-child {
+  border-top: none;
+}
+.cs-page .cs-agenda-link:hover {
+  background: #e8eeef;
+  padding-left: 14px;
+  padding-right: 14px;
+  color: #000d11;
+}
+.cs-agenda-link:hover .cs-agenda-arrow {
+  transform: translateX(4px);
+  color: #195263;
+}
+.cs-agenda-arrow {
+  font-size: 20px;
+  color: #5c8590;
+  transition: transform 0.15s ease;
+}
+.cs-agenda-num {
+  font-size: 30px;
+  line-height: 1;
+  color: #195263;
+}
+.cs-agenda-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.cs-agenda-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.cs-agenda-teaser {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #41717e;
+}
 .cs-facts {
   margin-top: 8px !important;
   display: grid;
